@@ -8,5 +8,25 @@
     "url": "https://github.com/fenjiangmiantiao/podcast-leads-mcp",
     "source": "github"
   },
-  "websiteUrl": "https://rapidapi.com/JaneThompson/api/podcast-leads-api"
+  "websiteUrl": "https://rapidapi.com/JaneThompson/api/podcast-leads-api",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/fenjiangmiantiao/podcast-leads-mcp/releases/download/v0.1.0/podcast-leads-mcp-0.1.0.mcpb",
+      "version": "0.1.0",
+      "fileSha256": "5dba2c454841cc1adf5e2f99e3ccea55084e1353ff1cfe4b434a4cf3b2447a8c",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "PODCAST_LEADS_RAPIDAPI_KEY",
+          "description": "X-RapidAPI-Key for podcast-leads-api on RapidAPI (free BASIC plan: 50 leads/month).",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
 }

@@ -193,18 +193,23 @@ uv run podcast-leads-mcp      # speaks MCP over stdio
 
 ## MCP Registry
 
-`server.json` is the descriptor for the official [MCP Registry](https://registry.modelcontextprotocol.io)
-(`io.github.fenjiangmiantiao/podcast-leads-mcp`).
+Published as [`io.github.fenjiangmiantiao/podcast-leads-mcp`](https://registry.modelcontextprotocol.io/v0/servers?search=podcast-leads-mcp)
+— version 0.1.0, `mcpb` package, stdio transport.
+
+**Install the bundle.** Grab [`podcast-leads-mcp-0.1.0.mcpb`](https://github.com/fenjiangmiantiao/podcast-leads-mcp/releases/download/v0.1.0/podcast-leads-mcp-0.1.0.mcpb)
+and open it with an MCPB-aware client (Claude Desktop: drag it in). The bundle runs on the uv runtime
+and pulls `mcp<2` + `httpx` on first launch. Set `PODCAST_LEADS_RAPIDAPI_KEY` in the client's
+environment — the registry entry marks it required and secret.
+
+Built from `manifest.json` + `mcpb/pyproject.toml`; `server.json` is the registry descriptor.
+Maintainers republish with the [`mcp-publisher`](https://github.com/modelcontextprotocol/registry) CLI:
 
 ```bash
+npx @anthropic-ai/mcpb pack mcpb-build podcast-leads-mcp-0.1.0.mcpb   # then attach to a GitHub release
 mcp-publisher validate        # schema + semantic checks, no login required
-mcp-publisher login github    # OAuth device flow (or --token <PAT> with read:org)
+mcp-publisher login github    # OAuth device flow, or --token <PAT> with read:org
 mcp-publisher publish
 ```
-
-**Status: not published yet.** Publishing needs a GitHub login for the `io.github.fenjiangmiantiao`
-namespace. Until then the descriptor carries metadata only — there is no PyPI/npm package or remote
-endpoint for clients to install from.
 
 ## License
 
