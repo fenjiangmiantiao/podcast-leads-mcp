@@ -1,0 +1,47 @@
+{
+  "manifest_version": "0.4",
+  "name": "podcast-leads-mcp",
+  "display_name": "Podcast Leads",
+  "version": "0.1.0",
+  "description": "Find podcast host emails by keyword, with activity signals and a transparent funnel.",
+  "author": {
+    "name": "fenjiangmiantiao",
+    "url": "https://github.com/fenjiangmiantiao"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fenjiangmiantiao/podcast-leads-mcp"
+  },
+  "homepage": "https://github.com/fenjiangmiantiao/podcast-leads-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "podcast",
+    "leads",
+    "email",
+    "prospecting"
+  ],
+  "server": {
+    "type": "uv",
+    "entry_point": "src/podcast_leads_mcp/server.py",
+    "mcp_config": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "${__dirname}",
+        "src/podcast_leads_mcp/server.py"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "linux",
+      "win32"
+    ],
+    "runtimes": {
+      "python": ">=3.10"
+    }
+  }
+}
