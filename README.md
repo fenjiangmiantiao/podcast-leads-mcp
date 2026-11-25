@@ -191,6 +191,21 @@ uv sync
 uv run podcast-leads-mcp      # speaks MCP over stdio
 ```
 
+## MCP Registry
+
+`server.json` is the descriptor for the official [MCP Registry](https://registry.modelcontextprotocol.io)
+(`io.github.fenjiangmiantiao/podcast-leads-mcp`).
+
+```bash
+mcp-publisher validate        # schema + semantic checks, no login required
+mcp-publisher login github    # OAuth device flow (or --token <PAT> with read:org)
+mcp-publisher publish
+```
+
+**Status: not published yet.** Publishing needs a GitHub login for the `io.github.fenjiangmiantiao`
+namespace. Until then the descriptor carries metadata only — there is no PyPI/npm package or remote
+endpoint for clients to install from.
+
 ## License
 
 MIT

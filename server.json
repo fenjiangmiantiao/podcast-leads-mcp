@@ -1,0 +1,12 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.fenjiangmiantiao/podcast-leads-mcp",
+  "title": "Podcast Leads",
+  "description": "Find podcast host emails by keyword, with activity signals and a transparent funnel.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/fenjiangmiantiao/podcast-leads-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://rapidapi.com/JaneThompson/api/podcast-leads-api"
+}
