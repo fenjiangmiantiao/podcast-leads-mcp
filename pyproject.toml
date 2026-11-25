@@ -5,10 +5,44 @@ description = "MCP server for the Podcast Leads API - find podcast host emails b
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
+keywords = [
+    "mcp",
+    "model-context-protocol",
+    "podcast",
+    "podcast-leads",
+    "lead-generation",
+    "email-finder",
+    "prospecting",
+    "claude",
+    "cursor",
+    "n8n",
+    "rapidapi",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: Email",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Office/Business",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 dependencies = [
     "mcp>=1.2.0,<2",
     "httpx>=0.27.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/fenjiangmiantiao/podcast-leads-mcp"
+Repository = "https://github.com/fenjiangmiantiao/podcast-leads-mcp"
+Issues = "https://github.com/fenjiangmiantiao/podcast-leads-mcp/issues"
+"API Reference" = "https://rapidapi.com/JaneThompson/api/podcast-leads-api"
 
 [project.scripts]
 podcast-leads-mcp = "podcast_leads_mcp.server:main"

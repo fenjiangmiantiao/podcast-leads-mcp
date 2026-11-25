@@ -1,0 +1,39 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+#
+# Schema note (verified against Smithery's documented startCommand shape, still the format
+# third-party registries and directory mirrors read):
+#   startCommand.type: "stdio"
+#   startCommand.configSchema: JSON Schema for the config a client fills in
+#   startCommand.commandFunction: JS arrow fn `(config) => ({ command, args, env })`
+#   startCommand.exampleConfig: placeholder values for the UI
+#
+# Status note (2026-10): Smithery retired its hosted/proxied runtime on 2026-10-31 and is now
+# a plain (non-proxied) registry, so this file is kept for registry/directory compatibility
+# rather than for a Smithery-managed deployment. The Dockerfile is the supported deploy path.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - rapidApiKey
+    properties:
+      rapidApiKey:
+        type: string
+        title: RapidAPI key
+        description: >-
+          Your X-RapidAPI-Key for podcast-leads-api on RapidAPI. Subscribe to the
+          free BASIC plan (50 leads/month, no card) and paste the key here.
+  commandFunction: |-
+    (config) => ({
+      command: 'uvx',
+      args: [
+        '--from',
+        'git+https://github.com/fenjiangmiantiao/podcast-leads-mcp',
+        'podcast-leads-mcp'
+      ],
+      env: {
+        PODCAST_LEADS_RAPIDAPI_KEY: config.rapidApiKey
+      }
+    })
+  exampleConfig:
+    rapidApiKey: your_rapidapi_key_here
