@@ -211,6 +211,12 @@ mcp-publisher login github    # OAuth device flow, or --token <PAT> with read:or
 mcp-publisher publish
 ```
 
+## Where to find it
+
+- **MCP Registry** — [`io.github.fenjiangmiantiao/podcast-leads-mcp`](https://registry.modelcontextprotocol.io/v0/servers?search=podcast-leads-mcp), published 2026-11-25, `mcpb` package.
+- **Glama** — [quality-scored listing](https://glama.ai/mcp/servers/fenjiangmiantiao/podcast-leads-mcp) (auto-indexed from GitHub).
+- **awesome-mcp-servers** — [PR #20584](https://github.com/punkpeye/awesome-mcp-servers/pull/20584), open and waiting on the maintainer.
+
 ## License
 
 MIT
