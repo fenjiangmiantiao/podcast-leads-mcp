@@ -58,3 +58,14 @@ MCP server for podcast lead gen: keyword in, host emails plus activity signals o
 | Glama listing | https://glama.ai/mcp/servers/fenjiangmiantiao/podcast-leads-mcp |
 | awesome-mcp-servers PR | https://github.com/punkpeye/awesome-mcp-servers/pull/20584 |
 | RapidAPI subscribe (needed for a key) | https://rapidapi.com/JaneThompson/api/podcast-leads-api |
+## Submission results (2026-11-25, submitted by main session)
+
+| Venue | Result | Detail |
+|---|---|---|
+| mcpservers.org | ✅ **submitted** | Free tier, "Submission Successful", review within 2 weeks, email notification on approval. Category: Marketing. Registry name included. |
+| mcp.directory | ✅ **submitted** | "Server Submitted!", auto-pull from GitHub, publish within 24 hours. |
+| mcpmarket.com | ❌ **paid** | The submit button redirects to a Stripe checkout: **USD 29.00 one-time** (SGD 38.97). Not a free listing — the earlier "no price shown" reading was wrong; price only appears at checkout. Not paid. |
+| mcp.so | ⏸ not paid | USD 39 one-time, paid-only listing. |
+| Glama Claim | ⏸ skipped | Needs GitHub OAuth sign-in; listing is already live without claiming. |
+
+Pending: 2h recheck of github.com/mcp auto-ingest.
