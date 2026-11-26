@@ -213,7 +213,10 @@ mcp-publisher publish
 
 ## Where to find it
 
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/fenjiangmiantiao/podcast-leads-mcp)
+
 - **MCP Registry** — [`io.github.fenjiangmiantiao/podcast-leads-mcp`](https://registry.modelcontextprotocol.io/v0/servers?search=podcast-leads-mcp), published 2026-11-25, `mcpb` package.
+- **mcpservers.org** — [approved listing](https://mcpservers.org/servers/fenjiangmiantiao/podcast-leads-mcp), live 2026-11-25.
 - **Glama** — [quality-scored listing](https://glama.ai/mcp/servers/fenjiangmiantiao/podcast-leads-mcp) (auto-indexed from GitHub).
 - **awesome-mcp-servers** — [PR #20584](https://github.com/punkpeye/awesome-mcp-servers/pull/20584), open and waiting on the maintainer.
 
