@@ -4,6 +4,11 @@ An MCP server for the [Podcast Leads API](https://rapidapi.com/JaneThompson/api/
 Give Claude, Cursor, or n8n a keyword and it comes back with podcast host emails, websites,
 and activity signals — no HTTP plumbing in your prompt.
 
+> **You need an API key — the MCP package is only the client.**
+> Free BASIC plan: 50 leads/month, no card →
+> **[Subscribe on RapidAPI](https://rapidapi.com/JaneThompson/api/podcast-leads-api)**, then copy your `X-RapidAPI-Key`.
+> Installing this package on your own machine does not remove that requirement.
+
 ```
 "Find active fintech podcasts with a host email I can pitch"
   -> search_podcasts(query="fintech", require_email=true, active_within_days=90)
